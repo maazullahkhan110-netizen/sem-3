@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Revision</h1>
+    <button onclick="runcode()">run code</button>
+    <p id="result"></p>
+
+    <script>
+        function runcode() {
+            let x = 10;
+            let y = 20;
+            let z = x + y;
+            let age = 25;
+            let name = "John Doe";
+            let isStudent = true;
+            let fruits = ["apple", "banana", "orange"];
+            document.getElementById("result").innerText = "The sum of x and y is: " + z;
+            document.getElementById("result").innerText += "\nName: " + name + ", Age: " + age + ", Is Student: " + isStudent;
+        }
+    </script>
+    <h2> operators example</h2>
+    <button onclick="runcode3()">Run Operators</button>
+    <p id="result3"></p>
+    <script>
+        function runcode3() {
+            let y=1;
+            let u=2;
+            let q=y+u;
+            document.getElementById("result3").innerText = "The sum of y and u is: " + q;
+        }
+
+    </script>
+    <h2>if else example</h2>
+    <button onclick="runcode4()">Run If Else</button>
+    <p id="result4"></p>
+    <script>
+        function runcode4() {
+            let marks= 100;
+            if (marks >= 90) {
+                document.getElementById("result4").innerText = "You are an excellent student.";
+            } else {
+                document.getElementById("result4").innerText = "You need to work harder.";
+            }
+        }
+    </script>
+    <h2>switch case example</h2>
+    <button onclick="runcode5()">Run Switch Case</button>
+    <p id="result5"></p>
+    <script>
+        function runcode5() {
+            function addnumbers(a, b) {
+                return a + b;
+            }
+            let sum = addnumbers(99, 1);
+            document.getElementById("result5").innerText = "The sum is: " + sum; 
+        }
+    </script>
+    <h2>array example</h2>
+    <button onclick="runcode6()">Run Array</button>
+    <p id="result6"></p>
+    <script>
+        function runcode6() {
+            let students = ["kutta", "billi", "chuha", "gadha"];
+            let first=students[0];
+            let total=students.length;
+            students.push("suar");
+            document.getElementById("result6").innerText = 
+            "total:"+total+"|"+
+            "first:"+first+"|"+
+            "after add:"+students;
+            
+        }
+    </script>
+    <h2> Object Example </h2>
+    <button onclick="runcode7()">Run Object</button>
+    <p id="result7"></p>
+    <script>
+        function runcode7(){
+            let student={
+                name:"kutta",
+                age:10,
+                marks:99
+            };
+            let studentName=student.name;
+            let studentAge=student.age;
+            student.marks=100;
+            document.getElementById("result7").innerText=
+            "name:"+studentName+"|"+
+            "age:"+studentAge+"|"+
+            "updated marks:"+student.marks;
+        }
+    </script>
+<h2>function example</h2>
+<button onclick="runcode8()">Run Function</button>
+<p id="demotext">this text will change when you run.</p>
+<script>
+    function runcode8(){
+        document.getElementById("demotext").innerText="java script  text has changed";
+        document.getElementById("demotext").style.color="red";
+    }
+</script>
+<h2>events example</h2>
+<button onclick="setupEvents()">setup Events (run once)</button>
+<button id="clickmeButton">Click me</button>
+<script>
+    
+    function setupEvents() {
+        document.getElementById("clickmeButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    }
+</script>
+<h2>Template Literals Example</h2>
+<button onclick="runcode8()">Run Template Literals</button>
+<p id="result8"></p>
+<script>
+    function runcode8() {
+        let name = "John";
+        let age = 30;
+        let message = `name: ${name}, age: ${age}`;
+        document.getElementById("result8").innerText = message;
+    }
+</script>
+<h2>events example</h2>
+<button id="setupevent()">setup event (run once)</button>
+<button id="clickmebtn">click me!</button>
+<script>
+    function setupevent(){
+        documnet.getElementById("clickmebtn").addeventlistener("click",function()
+    {
+        alert("you clicked the button!");
+    });
+    }
+    </script>
+</body>
+</html>

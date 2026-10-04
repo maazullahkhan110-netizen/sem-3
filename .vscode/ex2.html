@@ -1,0 +1,11 @@
+<ul id="tasklist">
+    <li>Task 1</li>
+    <li>Task 2</li>
+</ul>
+<script>
+    document.getElementById("tasklist").addEventListener("click", (e)=>{
+        if(e.target.tagName==="LI"){
+            e.target.style.textDecoration="line-through";
+        }
+    });
+</script>
